@@ -208,10 +208,10 @@ The following table details the `operation` input and which values produce which
 | 0000 | and |
 | 0001 | ... |
 ... and so on
-<TODO: FILL THIS IN>
+
+<TODO: Fill this in>
 
 You must take the RISC-V ISA specification, which you can find on the first page of the Computer Organization and Design book, on page 16 in the RISC-V reader, or [on the web](https://riscv.org/specifications/), and implement the proper control to choose the right ALU operation.
-
 
 |31--25 |24--20|19--15|14--12|11--7|6--0     |  |
 |-------|------|------|------|-----|---------|--|
@@ -374,15 +374,15 @@ sbt> testOnly CODCPU.SingleCycleAddTesterLab1
 
 ## Debugging with the simulator
 
-<TODO>
+<TODO: Add how to debug>
 
 ### Running the simulator
 
-<TODO>
+<TODO: Add how to run the simulator>
 
 ### Building your own applications
 
-<TODO>
+<TODO: Talk about running your own programs>
 
 # Part IV: Implementing the rest of the R-type instructions
 
@@ -446,7 +446,7 @@ sbt> testOnly CODCPU.SingleCycleCPUTesterLab1 -- -z addfwd
 
 ## Debugging
 
-<TODO>
+<TODO: Add how to debug multiple cycle instructions>
 
 # Part VI: Feedback
 
@@ -468,8 +468,9 @@ One of them is for the code you've written for this lab, and the other is for th
 
 ## Code portion
 
-Describe how to submit the code portion to Gradescope here.
-<I think we want them to upload just the files they touched (`components/alu-control.scala`, and `single-cycle/cpu.scala`). We need to figure out how to get these files in the right places.>
+<TODO: Describe how to submit the code portion to Gradescope>
+<I think we want them to upload just the files they touched (`components/alu-control.scala`, and `single-cycle/cpu.scala`).
+We need to figure out how to get these files in the right places.>
 
 ## Written portion
 
@@ -495,10 +496,6 @@ GitHub now allows everybody to create unlimited private repositories for up to t
 - Start early! There is a steep learning curve for Chisel, so start early and ask questions on Piazza and in discussion.
 - If you need help, come to office hours for the TAs, or post your questions on Piazza.
 
-## Common errors
-
-Note: We will populate this with questions from Piazza when it looks like many people are running into the same issue.
-
 ## Printf debugging
 
 <TODO: Expand this>
@@ -510,6 +507,10 @@ This is the best style of debugging for this assignment.
   - You can also put any Scala statement in the print statement (e.g., `printf(p"Output: ${io.output})`)
   - Use `println` to print during compilation in the Chisel code or during test execution in the test code. This is mostly like Java's `println`.
   - If you want to use Scala variables in the print statement, prepend the statement with an 's'. For example, `println(s"This is my cool variable: $variable")` or `println("Some math: 5 + 5 = ${5+5}")`.
+
+## Common errors
+
+Note: We will populate this with questions from Piazza when it looks like many people are running into the same issue.
 
 ### Cannot find cpu.registers.regs_5 in symbol table
 
